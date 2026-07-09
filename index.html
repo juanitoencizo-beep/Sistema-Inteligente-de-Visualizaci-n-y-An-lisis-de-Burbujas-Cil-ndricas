@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Soluciones Digitales y Analítica S.A.S.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--primary:#0F62FE;
+--secondary:#12B5CB;
+--support:#F4F7FC;
+
+--dark:#1B1F2A;
+--text:#4F566B;
+--white:#ffffff;
+--shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:var(--support);
+color:var(--dark);
+}
+
+header{
+
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:sticky;
+top:0;
+z-index:100;
+
+}
+
+.logo{
+
+font-size:22px;
+font-weight:700;
+
+}
+
+nav{
+
+display:flex;
+gap:25px;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+opacity:.8;
+
+}
+
+.hero{
+
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:50px;
+align-items:center;
+
+}
+
+.hero h1{
+
+font-size:48px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+line-height:1.8;
+color:var(--text);
+margin-bottom:30px;
+
+}
+
+.btn{
+
+padding:15px 30px;
+border:none;
+border-radius:10px;
+background:var(--primary);
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#094bd1;
+
+}
+
+.dashboard{
+
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:var(--shadow);
+
+}
+
+.chart{
+
+height:220px;
+display:flex;
+align-items:flex-end;
+gap:12px;
+
+}
+
+.bar{
+
+flex:1;
+background:linear-gradient(var(--secondary),var(--primary));
+border-radius:8px 8px 0 0;
+animation:grow 1.2s ease;
+
+}
+
+@keyframes grow{
+
+from{height:0;}
+
+}
+
+section{
+
+padding:70px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:50px;
+
+}
+
+.title h2{
+
+font-size:34px;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:var(--shadow);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin:15px 0;
+
+}
+
+.icon{
+
+font-size:45px;
+
+}
+
+.table{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:var(--shadow);
+overflow:auto;
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+th{
+
+background:var(--primary);
+color:white;
+padding:15px;
+
+}
+
+td{
+
+padding:15px;
+border-bottom:1px solid #eee;
+
+}
+
+.status{
+
+padding:6px 14px;
+border-radius:20px;
+color:white;
+font-size:13px;
+
+}
+
+.ok{
+
+background:#2ecc71;
+
+}
+
+.alert{
+
+background:#f39c12;
+
+}
+
+form{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:var(--shadow);
+display:grid;
+gap:20px;
+
+}
+
+input,select,textarea{
+
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:15px;
+
+}
+
+footer{
+
+background:var(--dark);
+color:white;
+padding:30px;
+text-align:center;
+margin-top:60px;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Soluciones Digitales y Analítica S.A.S.
+
+</div>
+
+<nav>
+
+<a href="#">Inicio</a>
+
+<a href="#">Monitoreo</a>
+
+<a href="#">Simulación</a>
+
+<a href="#">Análisis</a>
+
+<a href="#">Reportes</a>
+
+<a href="#">Contacto</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+Sistema Inteligente de Visualización y Análisis de Burbujas Cilíndricas
+</h1>
+
+<p>
+
+Plataforma diseñada para registrar información, monitorear procesos,
+simular comportamientos, generar indicadores y optimizar el análisis
+de datos científicos y técnicos mediante una interfaz moderna e intuitiva.
+
+</p>
+
+<button class="btn">
+
+Ingresar al Sistema
+
+</button>
+
+</div>
+
+<div class="dashboard">
+
+<h3>Monitoreo en Tiempo Real</h3>
+
+<br>
+
+<div class="chart">
+
+<div class="bar" style="height:60%"></div>
+
+<div class="bar" style="height:90%"></div>
+
+<div class="bar" style="height:75%"></div>
+
+<div class="bar" style="height:100%"></div>
+
+<div class="bar" style="height:55%"></div>
+
+<div class="bar" style="height:82%"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+
+<h2>Módulos Principales</h2>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">📊</div>
+
+<h3>Visualización</h3>
+
+<p>
+
+Gráficas dinámicas para analizar el comportamiento
+de las burbujas cilíndricas.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🧪</div>
+
+<h3>Simulación</h3>
+
+<p>
+
+Modelos de simulación para pruebas experimentales.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📡</div>
+
+<h3>Monitoreo</h3>
+
+<p>
+
+Seguimiento en tiempo real de sensores y variables.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📁</div>
+
+<h3>Gestión</h3>
+
+<p>
+
+Registro de procesos técnicos, mantenimiento y consultas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+
+<h2>Estado del Sistema</h2>
+
+</div>
+
+<div class="table">
+
+<table>
+
+<tr>
+
+<th>ID</th>
+
+<th>Proceso</th>
+
+<th>Estado</th>
+
+<th>Fecha</th>
+
+</tr>
+
+<tr>
+
+<td>001</td>
+
+<td>Simulación Experimental</td>
+
+<td><span class="status ok">Activo</span></td>
+
+<td>09/07/2026</td>
+
+</tr>
+
+<tr>
+
+<td>002</td>
+
+<td>Captura de Datos</td>
+
+<td><span class="status ok">Correcto</span></td>
+
+<td>09/07/2026</td>
+
+</tr>
+
+<tr>
+
+<td>003</td>
+
+<td>Sensor Principal</td>
+
+<td><span class="status alert">Revisión</span></td>
+
+<td>09/07/2026</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+
+<h2>Registrar Nuevo Proceso</h2>
+
+</div>
+
+<form>
+
+<input type="text" placeholder="Nombre del proceso">
+
+<select>
+
+<option>Seleccione tipo</option>
+
+<option>Simulación</option>
+
+<option>Monitoreo</option>
+
+<option>Análisis</option>
+
+<option>Mantenimiento</option>
+
+</select>
+
+<input type="date">
+
+<textarea rows="5" placeholder="Descripción"></textarea>
+
+<button class="btn">
+
+Guardar Registro
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 Soluciones Digitales y Analítica S.A.S.
+
+<br>
+
+Sistema de Visualización, Monitoreo y Análisis de Burbujas Cilíndricas.
+
+</footer>
+
+</body>
+</html>
